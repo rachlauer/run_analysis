@@ -103,7 +103,7 @@ test <- cbind(subject_test, test)
 
 #bind train and test sets with the subject column
 train_test <- rbind(train, test)                      
-train_test_sub <- cbind(train_test_sub, train_test_mean_std)
+train_test_sub <- cbind(train_test[,1:2], train_test_mean_std)
 
 #An independent tidy data set with the average of each variable for each activity and each subject.
 mean_std_agg <- aggregate(. ~ subject + activity, data=train_test_sub, FUN=mean)
