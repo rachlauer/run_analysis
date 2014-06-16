@@ -107,3 +107,6 @@ train_test_sub <- cbind(train_test[,1:2], train_test_mean_std)
 
 #An independent tidy data set with the average of each variable for each activity and each subject.
 mean_std_agg <- aggregate(. ~ subject + activity, data=train_test_sub, FUN=mean)
+
+#export mean_std_agg
+write.table(mean_std_agg, "C:\\Users\\vuser\\Desktop\\Coursera\\Getting_Cleaning_Data\\tidy_dataset.txt", sep="\t") 
