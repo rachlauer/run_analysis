@@ -39,7 +39,7 @@ train_test_sub - activty and subject columns
 DATA:
 The data created is as follows:
 1. train_test - Data from the train and test datasets along with the activities and subject associated with each row. Column names of this dataset are the features.
-2. train_test_mean_std - Data extracted from the train_test. The data includes only the columns that whose features took the measurements on the mean and
+2. train_test_mean_std - Data extracted from the train_test dataset. The data includes only the columns that whose features took the measurements on the mean or
    standard deviation for each measurement. Included are the activity and subject columns.
-3. mean_std_agg - Independent tidy data set with the average of each variable for each activity and each subject. This dataset is 180 rows by 68 columns. 
+3. mean_std_agg - Independent tidy data set with the average of each variable for each activity and each subject. This dataset is 126 rows by 68 columns. 
   	 	  Each row takes the mean of each column based on an activity and subject.
